@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ctl_play">64dp</dimen>
+    <dimen name="ctl_side">48dp</dimen>
+    <dimen name="ctl_ep">44dp</dimen>
+    <dimen name="ctl_pad_h">24dp</dimen>
+    <dimen name="ctl_tool_h">34dp</dimen>
+    <dimen name="ctl_ep_card_w">168dp</dimen>
+    <dimen name="ctl_ep_card_h">66dp</dimen>
+</resources>

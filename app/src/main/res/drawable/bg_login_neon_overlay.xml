@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Top-right cyan/teal neon atmospheric glow -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:centerX="0.80"
+                android:centerY="0.16"
+                android:gradientRadius="52%p"
+                android:startColor="#4D00D2FF"
+                android:centerColor="#1C25D9BD"
+                android:endColor="#00000000" />
+        </shape>
+    </item>
+    <!-- Left-center cyan brand aura -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:centerX="0.26"
+                android:centerY="0.44"
+                android:gradientRadius="56%p"
+                android:startColor="#3D00D2FF"
+                android:centerColor="#180A8FB5"
+                android:endColor="#00000000" />
+        </shape>
+    </item>
+    <!-- Bottom-left warm gold highlight -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:centerX="0.06"
+                android:centerY="0.94"
+                android:gradientRadius="42%p"
+                android:startColor="#2AFFB800"
+                android:centerColor="#10FFB800"
+                android:endColor="#00FFB800" />
+        </shape>
+    </item>
+</layer-list>

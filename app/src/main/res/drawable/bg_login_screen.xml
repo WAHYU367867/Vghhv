@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Lightweight static background: black/navy base with violet glow behind the brand and a soft gold glow at the corner. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:type="linear" android:angle="315" android:startColor="#070A10" android:centerColor="#0C111D" android:endColor="#080A12" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:type="radial" android:centerX="0.28" android:centerY="0.42" android:gradientRadius="60%p"
+                android:startColor="#2600D2FF" android:centerColor="#120A8FB5" android:endColor="#00000000" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:type="radial" android:centerX="0.0" android:centerY="1.0" android:gradientRadius="45%p"
+                android:startColor="#28FFB800" android:centerColor="#10FFB800" android:endColor="#00FFB800" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:type="radial" android:centerX="0.82" android:centerY="0.15" android:gradientRadius="50%p"
+                android:startColor="#2225D9BD" android:endColor="#00000000" />
+        </shape>
+    </item>
+</layer-list>

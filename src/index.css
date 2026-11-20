@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body, #root {
+    height: 100%;
+    background-color: #0A0C10;
+    color: #FFFFFF;
+    font-family: 'Cairo', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  /* Hide scrollbars cleanly like Android TV OverScroll / scrollbars="none" */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  /* TV remote & keyboard crisp electric cyan focus ring */
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  [role="button"]:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid #00D2FF;
+    outline-offset: 2px;
+    box-shadow: 0 0 18px rgba(0, 210, 255, 0.42);
+  }
+}
+
+/* Login screen illustrated cinema & falcon artwork backdrop */
+.bg-login-screen {
+  background-color: #070B18;
+  background-image:
+    linear-gradient(135deg, rgba(6, 10, 22, 0.36) 0%, rgba(8, 14, 30, 0.28) 50%, rgba(5, 9, 20, 0.44) 100%),
+    url('./assets/images/cinema_login_backdrop_1795063044960.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Main dashboard / browse illustrated hexagonal star-lattice & cinema line-art backdrop */
+.bg-hex-space {
+  background-color: #080E1E;
+  background-image:
+    linear-gradient(180deg, rgba(8, 13, 28, 0.36) 0%, rgba(6, 10, 22, 0.50) 100%),
+    url('./assets/images/cinema_hex_backdrop_1795063043696.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@keyframes breathe {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.55; }
+}
+
+.animate-breathe {
+  animation: breathe 1.8s ease-in-out infinite;
+}
+
+@keyframes indeterminate-bar {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-indeterminate {
+  animation: indeterminate-bar 1.3s ease-in-out infinite;
+}
